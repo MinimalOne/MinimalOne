@@ -13,6 +13,7 @@
   </head>
   <body>
     <div class="wrapper">
+        <!--
       <header>
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
         
@@ -38,6 +39,12 @@
         </ul>
         {% endif %}
       </header>
+      -->
+    <header>
+        <img src="{{site.logo | relative_url}}" alt="Logo" />
+        <h1><a href="{{ "/" | absolute_url }}" style="color:rgb(250, 250, 250);background-color:black">{{ site.title | default: site.github.repository_name }}</a></h1>
+        <p><img src="{{site.logo | relative_url}}" alt="Image" /></p>
+    </header>
       <section>
 
       {{ content }}
